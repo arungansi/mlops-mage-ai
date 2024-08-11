@@ -3,7 +3,8 @@ import os
 from mage_ai.settings.repo import get_repo_path
 
 ENV_VARS_KEY = 'env_vars'
-TERRAFORM_REPO_URL = 'https://github.com/mage-ai/mage-ai-terraform-templates.git'
+#TERRAFORM_REPO_URL = 'https://github.com/mage-ai/mage-ai-terraform-templates.git'
+TERRAFORM_REPO_URL = 'mage-ai-tf'
 TERRAFORM_DIR_NAME = 'terraform'
 TERRAFORM_AWS_NAME = 'aws'
 TERRAFORM_FULL_PATH = os.path.join(

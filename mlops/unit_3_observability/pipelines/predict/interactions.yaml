@@ -6,5 +6,10 @@ blocks:
     permissions: []
     uuid: playground.yaml
     variables: {}
+  - description: Make predictions without API requests
+    layout: []
+    name: Make predictions without API requests
+    permissions: []
+    uuid: playxgb.yaml
+    variables: {}
 layout: []
-permissions: []

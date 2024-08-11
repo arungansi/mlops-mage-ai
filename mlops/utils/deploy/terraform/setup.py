@@ -15,6 +15,7 @@ from mlops.utils.deploy.terraform.variables import update_variables
 
 def download_terraform_configurations():
     with TemporaryDirectory() as tmp_dir:
+        #tmp_dir = '/tmp/tmpd7c22kqu'
         git_clone(TERRAFORM_REPO_URL, tmp_dir)
 
         copy_files(

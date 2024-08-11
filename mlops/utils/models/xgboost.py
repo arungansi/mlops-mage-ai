@@ -36,7 +36,7 @@ def fit_model(
 
 
 def build_data(
-    X: scipy.sparse._csr.csr_matrix, y: Optional[pd.Series] = None
+    X: pd.DataFrame, y: Optional[pd.Series] = None
 ) -> np.ndarray:
     return DMatrix(X, y)
 

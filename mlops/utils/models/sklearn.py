@@ -126,6 +126,8 @@ def tune_hyperparameters(
         'max_depth',
         'max_iter',
         'min_samples_leaf',
+        'min_samples_split',
+        'n_estimators'
     ]:
         if key in best_hyperparameters:
             best_hyperparameters[key] = int(best_hyperparameters[key])
