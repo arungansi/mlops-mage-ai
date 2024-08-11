@@ -13,8 +13,8 @@ def git_clone(repo_url: str, target_dir: str):
     """
     if not os.path.isdir(target_dir):
         os.makedirs(target_dir, exist_ok=True)
-    print(repo_url,target_dir)
-    print(os.getcwd())
+    # print(repo_url,target_dir)
+    # print(os.getcwd())
     #Repo.clone_from(repo_url, target_dir)
     shutil.copytree(repo_url, target_dir, dirs_exist_ok=True)
     print(f'Repository cloned into: {target_dir}')
