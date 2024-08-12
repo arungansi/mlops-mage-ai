@@ -1,15 +1,9 @@
 blocks:
   inference:
-  - description: Have fun!
+  - description: Make predictions without API
     layout: []
-    name: Make predictions without API requests
+    name: Make predictions without API
     permissions: []
-    uuid: playground.yaml
-    variables: {}
-  - description: Make predictions without API requests
-    layout: []
-    name: Make predictions without API requests
-    permissions: []
-    uuid: playxgb.yaml
+    uuid: user_interface.yaml
     variables: {}
 layout: []

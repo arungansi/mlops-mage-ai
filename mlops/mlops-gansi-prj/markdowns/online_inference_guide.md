@@ -1,10 +1,11 @@
 # Sample online inference
-http://localhost:6789/api/pipeline_schedules/19/pipeline_runs/47c855cead7d4dd28a79b4ca328f609d
+http://localhost:6789/api/pipeline_schedules/1/pipeline_runs/ef46ef6d89f44853b3d31ef771991bc5
+
 Use the following CURL command to get real-time predictions:
 
 ```curl
 curl --location 'http://localhost:6789/api/runs' \
---header 'Authorization: Bearer 47c855cead7d4dd28a79b4ca328f609d' \
+--header 'Authorization: Bearer ef46ef6d89f44853b3d31ef771991bc5' \
 --header 'Content-Type: application/json' \
 --header 'Cookie: lng=en' \
 --data '{

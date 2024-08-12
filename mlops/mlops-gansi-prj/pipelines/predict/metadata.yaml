@@ -8,6 +8,7 @@ blocks:
       uuid: xgboost_wind_turbine
   downstream_blocks:
   - inference
+  - web_services
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -48,12 +49,30 @@ blocks:
   language: python
   name: inference
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: custom
   upstream_blocks:
   - xgboost_gdp
   uuid: inference
+- all_upstream_blocks_executed: true
+  color: blue
+  configuration:
+    file_source:
+      path: mlops-gansi-prj/custom/web_services.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: web services
+  retry_config: null
+  status: updated
+  timeout: null
+  type: custom
+  upstream_blocks:
+  - xgboost_gdp
+  uuid: web_services
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
