@@ -10,6 +10,7 @@ COPY ${PROJECT_NAME} ${PROJECT_NAME}
 
 ENV USER_CODE_PATH=${USER_CODE_PATH}
 
+
 # Install custom Python libraries and dependencies for your project.
 RUN pip3 install -r ${USER_CODE_PATH}/requirements.txt
 
@@ -23,4 +24,5 @@ RUN apt-get update && \
   unzip terraform_1.8.3_linux_amd64.zip -d /usr/local/bin/ && \
   rm terraform_1.8.3_linux_amd64.zip
 
+#it runs the shell command and -c is the argumet for sending the run_app.sh shell file
 CMD ["/bin/sh", "-c", "/app/run_app.sh"]
