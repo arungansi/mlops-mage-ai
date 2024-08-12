@@ -12,6 +12,7 @@ ENV USER_CODE_PATH=${USER_CODE_PATH}
 
 #pl make sure you have the gh installed at the beginning
 RUN apt install gh
+# do gh auth login in the container cmd line
 
 # Install custom Python libraries and dependencies for your project.
 RUN pip3 install -r ${USER_CODE_PATH}/requirements.txt
